@@ -1,4 +1,39 @@
-.App {
+a, a:visited, a:hover, a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+/* * {
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+*:link {
+  text-decoration: none;
+}
+
+*:visited {
+  text-decoration: none;
+}
+
+*:hover {
+  text-decoration: none;
+}
+
+*:active {
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+  background-color: whitesmoke;
+} */
+
+
+/* react default format */
+
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +70,6 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
+
+

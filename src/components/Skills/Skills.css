@@ -1,0 +1,8 @@
+img {
+    display: flex;
+    /* height: min-content;
+    width: min-content; */
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+}
