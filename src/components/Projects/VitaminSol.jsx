@@ -1,8 +1,9 @@
 import React from 'react'
+import "./VitaminSol.css"
 
 const VitaminSol = () => {
   return (
-    <div>
+    <div className='carousel'>
       heloo
     </div>
   )
