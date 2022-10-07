@@ -3,32 +3,45 @@ import React from 'react'
 import "./Projects.css"
 import "./VitaminSol.css"
 import "./VitaminSol.jsx"
-import { Link } from "react-router-dom"
+import "./StoneBabes.css"
+import "./StoneBabes.jsx"
+// import { Link } from "react-router-dom"
+import StoneBabes from './StoneBabes'
 import VitaminSol from './VitaminSol.jsx'
-// import StoneBabes from './StoneBabes'
-// import {useState} from 'react'
+import {useState} from 'react'
 
 const Projects = () => {
 
   
 
-  // const [vitamin, setVitamin] = useState(true)
+  const [active, setActive] = useState('')
   // const [stone, setStone] = useState(true)
 
-  const handleClick = e => {
+  const handleClick = (project) => {
     
-    console.log(e.currentTarget)
+    setActive(project)
+    console.log(project)
 
   }
 
+  console.log(!!active)
+
   return (
     <>
-      <div className='project-container'>
-        <Link  className='vitamin-sol' onClick={handleClick} to={VitaminSol} alt="Vitamin Sol Project"></Link>
-        <div className='stone-babes' alt="Stone Babes Project">
-        </div>
-        
+      <div className='landing-container'>
+      {!active
+         ? 
+          <div className='project-container'>
+            <div  className='vitamin-sol' onClick={() => handleClick('vitamin-sol')} alt="Vitamin Sol Project"></div>
+            <div className='stone-babes' onClick={() => handleClick('stone-babes')} alt="Stone Babes Project"></div>
+          </div> 
+         : null}
+          <div className='active-project'>
+            {active === 'vitamin-sol' ? <VitaminSol/> : null}
+            {active === 'stone-babes' ? <StoneBabes/> : null}
+          </div>
       </div>
+
     </>
   )
 }
@@ -36,3 +49,8 @@ const Projects = () => {
 export default Projects
 
 //onClick={handleClick}
+
+//check to see if div working with string
+//block out chunks (header, body, etc)
+//refine pieces, think in boxes
+//reusability is crucial
