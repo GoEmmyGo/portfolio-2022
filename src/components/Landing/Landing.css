@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
+    margin-top: 10vh;
     height: 100vh;
     background: url(../Images/16F0E768-F96F-45C5-9840-DE2F8AB19FBA.jfif) no-repeat top center;
     -webkit-background-size: cover;
