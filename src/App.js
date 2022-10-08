@@ -11,6 +11,17 @@ import Landing from "./components/Landing/Landing.jsx"
 import { Route, Routes } from "react-router-dom"
 import { useState} from 'react'
 
+//trying to make a new landing with only name and title with full background, then click the shoes and nav bar appears with white margin (looks like original landing design)
+
+    //also will keep the background full and hidden beg+hind white margin with contact page only showing circle cutout of shoes
+
+    //how? possibly make new landing page with ternary for showing navbar and include navbar in all other pages? 
+
+    //hitting home on the navbar will return you to the landing page, where you must again click the shoes to enter? or home will just take you to the actual homepage, no way to return to the landing
+
+    //need back button for projects
+
+    //need to fix ugly carousel
 
 function App() {
 
