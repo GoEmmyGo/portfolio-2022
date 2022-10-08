@@ -1,7 +1,7 @@
 .skill-icons {
     display: flex;
     padding: 5vh 5vw;
-    margin-top: 10vh;
+    margin-top: 5vh;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -28,7 +28,7 @@ img {
     width: 20%;
     align-items: flex-start;
     justify-content: space-between;
-    padding: 2%;
+    padding: 4%;
     /* margin-bottom: 3%;    */
 }
 

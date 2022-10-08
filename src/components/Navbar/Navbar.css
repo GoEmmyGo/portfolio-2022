@@ -1,9 +1,17 @@
 /* need to address small errors in hover effect*/
 
 
-
+/* .background {
+    background: url(../Images/16F0E768-F96F-45C5-9840-DE2F8AB19FBA.jfif) no-repeat top center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    z-index: -1;
+} */
 
 .nav ul {
+    background-color: transparent;
     /* color: black; */
     display: flex;
     align-items: center;
@@ -16,7 +24,7 @@
     padding-left: 10vw;
     padding-right: 10vw;
     padding-top: 7vh;
-    font-size: 2vw;
+    font-size: 1.5vw;
     background-clip: border-box;
 }
 

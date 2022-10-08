@@ -10,7 +10,8 @@ const Landing = () => {
           <div className="main-title">
               Emmaline Rose      
           </div>
-          {/* <div className="career-title">Full Stack Web Developer</div> */}
+          <div className="career-title">Full Stack Web Developer</div>
+          <div className='enter'>GO</div>
       </div>
     </>
   )
