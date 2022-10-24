@@ -1,16 +1,22 @@
+body {
+  margin: 0;
+}
+
 a, a:visited, a:hover, a:active {
   text-decoration: none;
   color: inherit;
 }
 
-.full-background {
-  background: url(/src/components/Images/16F0E768-F96F-45C5-9840-DE2F8AB19FBA.jfif) no-repeat top center;
+/* .full-background {
+  background: url(/src/components/Images/16F0E768-F96F-45C5-9840-DE2F8AB19FBA.jfif) no-repeat 
+  top center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   z-index: -1;
-}
+
+} */
 
 
 

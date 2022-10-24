@@ -6,7 +6,8 @@ import "./VitaminSol.jsx"
 import "./StoneBabes.css"
 import "./StoneBabes.jsx"
 // import { Link } from "react-router-dom"
-import StoneBabes from './StoneBabes'
+import Navbar from '../Navbar/Navbar.jsx'
+import StoneBabes from './StoneBabes.jsx'
 import VitaminSol from './VitaminSol.jsx'
 import {useState} from 'react'
 
@@ -15,7 +16,6 @@ const Projects = () => {
   
 
   const [active, setActive] = useState('')
-  // const [stone, setStone] = useState(true)
 
   const handleClick = (project) => {
     
@@ -28,6 +28,7 @@ const Projects = () => {
 
   return (
     <>
+      <Navbar />
       <div className='landing-container'>
       {!active
          ? 
@@ -37,11 +38,35 @@ const Projects = () => {
           </div> 
          : null}
           <div className='active-project'>
-            {active === 'vitamin-sol' ? <VitaminSol/> : null}
-            {active === 'stone-babes' ? <StoneBabes/> : null}
+            {active === 'vitamin-sol' 
+              ? 
+                <div className='back-button'>
+                  {active 
+                    ? 
+                    <button onClick={() => handleClick('landing-container')} /> 
+                  : null}
+                <VitaminSol/>
+                </div> 
+              : null}
+            {active === 'stone-babes' 
+              ? 
+                <div className='back-button'>
+                  {active 
+                    ? 
+                      <button onClick={() => handleClick('landing-container')} /> 
+                    : null}
+                <StoneBabes/>
+                </div>
+              : null}
+            {active === 'landing-container' 
+              ?           
+                <div className='project-container'>
+                  <div  className='vitamin-sol' onClick={() => handleClick('vitamin-sol')} alt="Vitamin Sol Project"></div>
+                  <div className='stone-babes' onClick={() => handleClick('stone-babes')} alt="Stone Babes Project"></div>
+                </div>
+              : null }
           </div>
       </div>
-
     </>
   )
 }

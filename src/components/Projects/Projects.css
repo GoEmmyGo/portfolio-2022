@@ -4,6 +4,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    box-sizing: border-box;
     padding-top: 10vh;
     padding-left: 10vw;
     padding-right: 10vw;
@@ -14,44 +15,52 @@
 .vitamin-sol {
     display: flex;
     background-image: url('../Images/vitamin-sol.png');
-    background-position: top center;
+    box-sizing: border-box;
+    background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
-    height: 30vh;
+    /* height: 30vh; */
     width: 49%;
     -webkit-transform: scale(1);
 	transform: scale(1);
     transform-origin: center;
-	-webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
+	-webkit-transition: .3s ease-in;
+	transition: .3s ease-in;
     }
 
 .vitamin-sol:hover {
-    -webkit-transform: scale(1.05);
-    transform: scale(1.05);
+    -webkit-transform: scale(.95);
+    transform: scale(.95);
     transform-origin: center;
     
 }
 
 .stone-babes {
     display:flex;
-    background-image: url('../Images/stone-babes.png'); background-position: top center;
+    background-image: url('../Images/stone-babes.png'); 
+    box-sizing: border-box;
+    margin: 0;
+    background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
-    height: 30vh;
+    background-clip: border-box;
     /* width: 49%; */
     -webkit-transform: scale(1);
 	transform: scale(1);
     transform-origin: center;
-	-webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
+	-webkit-transition: .3s ease-in;
+	transition: .3s ease-in;
     overflow: hidden;
 }
 
 .stone-babes:hover {
-    -webkit-transform: scale(1.05);
-	transform: scale(1.05);
+    -webkit-transform: scale(.95);
+	transform: scale(.95);
     transform-origin: center;
+    
+}
+
+.back-button {
     
 }
 

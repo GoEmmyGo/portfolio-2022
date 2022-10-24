@@ -1,66 +1,97 @@
 .landing-box {
     display: flex;
     flex-direction: column;
+    align-content: center;
+    justify-content: center;
     box-sizing: border-box;
-    /* margin-top: 5vh; */
     height: 100vh;
-    /* background: url(../Images/16F0E768-F96F-45C5-9840-DE2F8AB19FBA.jfif) no-repeat top center;
+    background: url(../Images/16F0E768-F96F-45C5-9840-DE2F8AB19FBA-grayscale.jfif) no-repeat top center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover; */
-    margin-left: 10vw;
-    margin-right: 10vw;
+    background-size: cover;
+    /* margin-left: 10vw;
+    margin-right: 10vw; */
     z-index: 1;
     /* padding-left: 5rem;
     padding-right: 5rem; */
 }
 
-.main-title {
+/* .landing-title {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: flex-start;
     box-sizing:border-box;
-    /* Industrial font */
-    /* font-family: Arial, Helvetica, sans-serif;
-    font-size: 20vw;
+    Industrial font
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17vw;
     font-weight: 700;
-    letter-spacing: -2.3vw; */
-    /* Cursive font */
+    letter-spacing: -2.3vw;
+    Cursive font
     font-family: 'Sarina', cursive;
-    font-size: 15vw;
+    font-size: 9vw;
     font-weight: 500; 
-    letter-spacing: -2vw;
+    letter-spacing: -1vw;
     height: fit-content;
     max-width: fit-content;
     color: whitesmoke;
     margin: 1%;
-    line-height: 80%;
-    
+    line-height: 80%;   
+} */
+
+.landing-title {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 12.5vw;
+    padding-left: -2vw;
+    letter-spacing: -1.3vw;
+    flex-wrap: nowrap;
+    max-width: fit-content;
+    /* white-on-black */
+    /* background-color: black; */
+    color: whitesmoke;
+    /* Cursive Font */
+    /* margin-left: 1%; */
+    /* Industrial Font */
+    /* margin-left: 2.5%; */
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+    /* white-clear-white */
+    /* border: solid; 
+    border-width: thick;
+    border-color: whitesmoke; */
+    background-color: black;
+    /* background-clip: text;
+    -webkit-background-clip: text; */
 }
 
 
-.career-title {
+.landing-career-title {
     font-size: 2.5vw;
     box-sizing: border-box;
     width: fit-content;
-    font-family: 'Antonio', sans-serif;
+    /* font-family: 'Antonio', sans-serif; */
+    font-family: 'Sarina', cursive;
+    font-size: 3vw;
+    font-weight: 500; 
+    /* letter-spacing: -1vw; */
     /* white-on-black */
     /* background-color: black; */
     color: whitesmoke;
     padding: 0;
     margin-top: 1%;
     /* Cursive Font */
-    margin-left: 1%;
+    /* margin-left: 1%; */
     /* Industrial Font */
     /* margin-left: 2.5%; */
     display: flex;
     justify-content: center;
     align-items: center;
     /* white-clear-white */
-    border: solid; 
-    border-width: 3px;
+    /* border: solid; 
+    border-width: 3px; */
     border-color: whitesmoke;
     background-clip: text;
     -webkit-background-clip: text;

@@ -40,13 +40,11 @@
 }
 
 .contact-info {
-    background: url(../Images/16F0E768-F96F-45C5-9840-DE2F8AB19FBA.jfif) no-repeat top right;
     /* filter: opacity(0); */
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    border-radius: 50%;
     width: 30vw;
     height: 30vh;
 
