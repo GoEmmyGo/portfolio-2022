@@ -10,8 +10,9 @@
     z-index: -1;
 } */
 
+
 .nav ul {
-    background-color: transparent;
+    /* background-color: transparent; */
     /* color: black; */
     display: flex;
     align-items: center;
@@ -25,9 +26,11 @@
     padding-left: 10vw;
     padding-right: 10vw;
     padding-top: 7vh;
+    /* font-size: 1.5vw; */
     font-size: 1.5vw;
     background-clip: border-box;
     /* background-clip: text; */
+
 }
 
 .nav li:visited {

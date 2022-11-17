@@ -12,8 +12,8 @@ const Navbar = () => {
                 <ul>
                     <li className="home" alt="Home Page" ><CustomLink to="/home">HOME</CustomLink></li>
                     <li className="projects" alt="Projects Page" ><CustomLink to="/projects">PROJECTS</CustomLink></li>
-                    <li className="skills" alt="Skills Page" ><CustomLink to="/skills">SKILLS</CustomLink></li>
                     <li className="about" alt="About Me Page" ><CustomLink to="/about">ABOUT</CustomLink></li>
+                    <li className="skills" alt="Skills Page" ><CustomLink to="/skills">SKILLS</CustomLink></li>
                     <li className="contact" alt="Contact Info Page" ><CustomLink to="/contact">CONTACT</CustomLink></li>
                 </ul>
             </nav>

@@ -7,11 +7,14 @@ const Contact = () => {
     <>
       <Navbar />
       <div className='contact-container'>
-        <div className='contact-me'>let's start creating things</div>
+        {/* <div className='contact-me'>let's start creating things</div> */}
+        <div className='contact-me'>create something with me</div>
         <div className='contact-info'>
-          <div className='email'>emmalinerose.developer@gmail.com</div>
-          <div className='linked-in'>https://www.linkedin.com/in/emmaline-rose/</div>
-          <div className='github'>https://github.com/GoEmmyGo</div>
+          <a href={'https://mail.google.com/mail/u/0/#inbox?compose=CllgCKCFSrrCLgwwtJnhzpBhghbvfPFJWjBwDlWGPPzjTdndLnPsNbdqKMJDbgNbGWfHqLVnpwL'} className='email'>GMAIL</a>
+          <br/>
+          <a href={'https://www.linkedin.com/in/emmaline-rose/'}className='linked-in'>LINKED IN</a>
+          <br/>
+          <a href={'https://github.com/GoEmmyGo'}className='github'>GITHUB</a>
         </div>
       </div>
     </>

@@ -14,25 +14,64 @@
     margin-top: 5vh;
     margin-left: 10vw;
     margin-right: 10vw;
+    margin-bottom: 10vh;
+    /* margin-bottom: 0; */
     align-content: flex-start;
-    align-items: center;
+    align-items:flex-start;
     /* filter: brightness(50%); */
-    overflow-y: visible;
+    /* overflow-y: visible; */
 }
 
-svg {
+/* .skill-list {
+    font-family: 'Sarina', cursive;
+    font-family: 'Aboreto', cursive;
+    color: whitesmoke;
+    font-size: 5vh;
+    font-weight: 500;
+    letter-spacing: -.1vw;
+} */
+
+.icon-box {
     display: flex;
-    font-size: 20vw;
     box-sizing: border-box;
     flex-direction: row;
     flex-wrap: wrap;
     height: fit-content;
-    /* width: 20%; */
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+/* .skill-text {
+    display: flex;
+    margin-top: 0;
+    flex-direction: row;
+    justify-content: flex-start;
+} */
+
+svg {
+    display: flex;
+    padding: 4%;
+    margin: 9%;
+    background-color: rgba(255, 255, 255, 0.664);
+    -webkit-transition: .3s ease-in;
+	transition: .3s ease-in;
+    /* box-sizing: border-box;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: fit-content;
+    width: 50%;
     align-items: flex-start;
     justify-content: space-between;
-    padding: 4%;
-    /* filter: brightness(0%) invert(1); */
-    /* margin-bottom: 3%;    */
+    padding: 1.5%;
+    margin: 9%;
+    background-color: rgba(255, 255, 255, 0.5); */
+
+}
+
+svg:hover {
+    -webkit-transform: scale(1.2);
+	transform: scale(1.2);
+    transform-origin: center;
 }
 
 /* #node {
@@ -45,37 +84,38 @@ svg {
     background-color: transparent;
 } */
 
+
 @media screen and (min-width: 992px){
     .skill-icons {
         height: 150vh;
     }
 
+    .icon-box {
+        flex-direction: row;
+        margin: 4%;
+    }
+
     svg {
-        width: 20%;
-        margin-bottom: 5%;
-        margin-top: 5%;
-        /* padding: 10%; */
+        width: 7%;
+        padding: 2%;
+        margin: 4%;
     }
 }
 
 @media screen and (max-width: 1200px){
-    .skill-icons {
-        height: fit-content;
+
+    .icon-box {
+        flex-direction: row;
     }
 
     svg {
-        width: 50%;
-        padding: 10%;
+        width: 10vw;
     }
 }
 
 @media screen and (max-width: 600px){
-    .skill-icons {
-        height: fit-content;
-    }
 
     svg {
-        width: 50%;
-        padding: 10%;
+        width: 10vw;
     }
 }

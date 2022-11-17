@@ -5,6 +5,8 @@ import "./VitaminSol.css"
 import "./VitaminSol.jsx"
 import "./StoneBabes.css"
 import "./StoneBabes.jsx"
+import stoneBabesPic from '../Images/stone-babes.png'
+import vitaminSolPic from '../Images/vitamin-sol.png'
 // import { Link } from "react-router-dom"
 import Navbar from '../Navbar/Navbar.jsx'
 import StoneBabes from './StoneBabes.jsx'
@@ -33,39 +35,34 @@ const Projects = () => {
       {!active
          ? 
           <div className='project-container'>
-            <div  className='vitamin-sol' onClick={() => handleClick('vitamin-sol')} alt="Vitamin Sol Project"></div>
-            <div className='stone-babes' onClick={() => handleClick('stone-babes')} alt="Stone Babes Project"></div>
+              <img className='vitamin-sol' src={vitaminSolPic} onClick={() => handleClick('vitamin-sol')} alt="Vitamin Sol Project"></img>
+              {/* <p>Final Capstone Project</p> */}
+              <img className='stone-babes' src={stoneBabesPic} onClick={() => handleClick('stone-babes')} alt="Stone Babes Project"></img>
+            {/* <p>Foundations Capstone Project</p> */}
           </div> 
-         : null}
+         : 
           <div className='active-project'>
-            {active === 'vitamin-sol' 
-              ? 
-                <div className='back-button'>
-                  {active 
-                    ? 
-                    <button onClick={() => handleClick('landing-container')} /> 
+          {active === 'vitamin-sol' 
+            ? 
+              <div className='back'>
+                {active 
+                  ? 
+                    <button className='back-button' onClick={() => handleClick('')}>BACK TO PROJECTS</button> 
                   : null}
-                <VitaminSol/>
-                </div> 
-              : null}
-            {active === 'stone-babes' 
-              ? 
-                <div className='back-button'>
-                  {active 
-                    ? 
-                      <button onClick={() => handleClick('landing-container')} /> 
-                    : null}
-                <StoneBabes/>
-                </div>
-              : null}
-            {active === 'landing-container' 
-              ?           
-                <div className='project-container'>
-                  <div  className='vitamin-sol' onClick={() => handleClick('vitamin-sol')} alt="Vitamin Sol Project"></div>
-                  <div className='stone-babes' onClick={() => handleClick('stone-babes')} alt="Stone Babes Project"></div>
-                </div>
-              : null }
-          </div>
+              <VitaminSol/>
+              </div> 
+            : null}
+          {active === 'stone-babes' 
+            ? 
+              <div>
+                {active 
+                  ? 
+                    <button className='back-button' onClick={() => handleClick('')}>BACK TO PROJECTS</button>
+                  : null}
+              <StoneBabes/>
+              </div>
+            : null}
+          </div>}
       </div>
     </>
   )

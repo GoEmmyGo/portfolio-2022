@@ -7,7 +7,7 @@
 }
 
 .vita-home {
-    background: url("../Images/vita-home.png") no-repeat center center;
+    background: url("../Images/vitamin-sol.png") no-repeat center center;
     margin-left: 10vw;
     margin-right: 10vw;
     -webkit-background-size: cover;
@@ -55,7 +55,26 @@
     -o-background-size: cover;
     background-size: cover;
 } 
- 
- 
+
+/* .carousel .thumbs {
+    display: flex;
+    flex-direction: column;
+}
+
+.carousel .thumbs-wrapper {
+    display: flex;
+    position: initial;
+}
+
+.carousel-root {
+    display: flex;
+    flex-direction: row;
+}
+
+.carousel .carousel-slider {
+    overflow: visible !important;
+    width: 200vw !important;
+    display: flex !important;
+} */
  
  

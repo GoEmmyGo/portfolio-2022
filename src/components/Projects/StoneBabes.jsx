@@ -20,10 +20,12 @@ const StoneBabes = () => {
         <Carousel 
           autoPlay
           showStatus={false}
-          thumbWidth={200}
+          // max-width={1894}
+          // thumbWidth={275}
           infiniteLoop={true}
           useKeyboardArrows={true}
           dynamicHeight={true}
+          interval={4000}
           >
           <div>
             <img alt="stone babes homepage" src={require("../Images/stone-home.png")} />
@@ -34,16 +36,26 @@ const StoneBabes = () => {
             <p className="stone-about">Legend 1</p>
           </div>
           <div>
-            <img alt="stone babes projects" src={require("../Images/stone-projects.png")} />
+            <img alt="stone babes projects" src={require("../Images/stone-projects.png")}/>
             <p className="stone-projects">Legend 1</p>
           </div>
           <div>
             <img alt="stone babes sends" src={require("../Images/stone-sends.png")} />
-            <p className="stone-load">Legend 1</p>
+            <p className="stone-sends">Legend 1</p>
           </div>
           <div>
             <img alt="stone babes add climb" src={require("../Images/stone-add.png")} />
             <p className="stone-add">Legend 1</p>
+          </div>
+          <div>
+            <video 
+              alt="stone babes video" 
+              src={require("../Images/AS GOOD AS IT WILL GET IN TWO MIN.webm")} 
+              controls 
+              max-width={1894}
+            />
+            <img alt='stone babes video' src={require('../Images/stone-babes-vid-thumbnail.png')} />
+            <p className="stone-video">Legend 1</p>
           </div>
         </Carousel>
       </div>

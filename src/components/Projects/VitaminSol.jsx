@@ -23,7 +23,7 @@ const VitaminSol = () => {
         dynamicHeight={true}
         >
         <div>
-          <img alt="vitamin sol homepage" src={require("../Images/vita-home.png")} />
+          <img alt="vitamin sol homepage" src={require("../Images/vitamin-sol.png")} />
           <p className="vita-home">Legend 1</p>
         </div>
         <div>

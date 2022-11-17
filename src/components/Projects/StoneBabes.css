@@ -1,1 +1,132 @@
+/* @import "react-alice-carousel/lib/alice-carousel.css"; */
 
+.carousel-container {
+    margin-left: 10vw;
+    margin-right: 10vw;  
+    height: auto;
+    overflow-y: visible;
+    overflow-x: visible;
+}
+
+.carousel-root {
+    border: 50px; 
+    border-color: white;
+} 
+
+.carousel .slide {
+    border-color: white;
+    /* border: solid 3px; */
+    overflow-y: visible;
+    overflow-x: visible;
+    height: auto;
+}
+
+.carousel .slider {
+    overflow-y: visible;
+    overflow-x: visible;
+}
+
+.stone-home {
+    background: url("../Images/stone-home.png") no-repeat center center;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.stone-about {
+    background: url("../Images/stone-about.png") no-repeat center center;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.stone-projects {
+    background: url("../Images/stone-projects.png") no-repeat center center;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.stone-sends {
+    background: url("../Images/stone-sends.png") no-repeat center center;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.stone-add {
+    background: url("../Images/stone-add.png") no-repeat center center;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.stone-video {
+    background: url("../Images/AS GOOD AS IT WILL GET IN TWO MIN.webm") no-repeat center center;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+video {
+    display: flex;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.carousel .thumbs {
+    display: flex;
+    border: none;
+    transition: none;
+}
+
+.carousel .thumbs-wrapper ul {
+    display: flex;
+    justify-content: space-between;
+    transition: none;
+    margin: 0;
+    padding: 0;
+}
+
+.carousel .thumbs-wrapper {
+    display: flex;
+    justify-content: space-between;
+    transition: none;
+    margin: 0;
+    /* margin-top: 5vh; */
+    margin-bottom: 5vh;
+    padding: 0;
+}
+
+/* .carousel-root {
+    display: flex;
+    flex-direction: row;
+} */
+
+/* .carousel .carousel-slider {
+    overflow: visible !important;
+    width: 200vw !important;
+    display: flex !important;
+} */
+ 
+ 

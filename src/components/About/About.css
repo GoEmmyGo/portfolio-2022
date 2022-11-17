@@ -1,73 +1,143 @@
 .about-container {
+    background-color: #fdd9db;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-top: 5vh;
+    margin-bottom: 10vh;
+    height: auto;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
     padding-top: 10vh;
-    padding-left: 10vw;
-    padding-right: 10vw;
-    background-color: whitesmoke;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-bottom: 50vh;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+    font-size:x-large;
+    /* font-style: italic; */
+    /* overflow: visible; */
+    /* color: whitesmoke; */
+
+    /* justify-items: center; */
+    box-sizing: border-box;
+    /* padding-top: 10vh; */
+
  
 }
 
-.profile {
+.intro-pic {
     display: flex;
-    /* background-image: url('../Images/vitamin-sol.png'); */
-    background-position: top center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+    /* margin: 0; */
+}
+
+.intro-pic img {
+    display: flex;
+    flex-direction: column;
+    border-radius: 50%;
+    border-width: 4px;
+    border-style: solid;
+    padding: 12px;
+    /* border-color: #2a2a2a; */
+    border-color: black;
+    /* justify-content: flex-start; */
+    background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
-    height: 30vh;
-    width: 49%;
-    -webkit-transform: scale(1);
+    height: auto;
+    width: 100%;
+    /* -webkit-transform: scale(1);
 	transform: scale(1);
     transform-origin: center;
 	-webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
+	transition: .3s ease-in-out; */
+    overflow: visible;
+    margin: 0;
+    /* background-color: black; */
     }
 
-.profile:hover {
+.intro {
+    font-family: 'Sarina', cursive;
+    font-size: 200%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    height: max-content;
+    margin: 0;
+    margin-bottom: 5vh;
+    padding: 0;
+    text-align: center;
+}
+
+/* .profile:hover {
     -webkit-transform: scale(1.05);
     transform: scale(1.05);
     transform-origin: center;
     
-}
+} */
 
 .blurb {
     display:flex;
     /* background-image: url('../Images/stone-babes.png'); background-position: top center; */
+    flex-direction: column;
     background-repeat: no-repeat;
     background-size: contain;
-    height: 30vh;
+    /* justify-content: flex-start; */
+    /* height: 30vh; */
     /* width: 49%; */
     -webkit-transform: scale(1);
 	transform: scale(1);
     transform-origin: center;
 	-webkit-transition: .3s ease-in-out;
 	transition: .3s ease-in-out;
-    overflow: hidden;
+    overflow: visible;
+    text-align: justify;
+    height: auto;
+    /* background-color: black; */
 }
 
-.blurb:hover {
+#bio {
+    margin-top: 0;
+}
+
+/* .breaker {
+    color: #fdd9db;
+} */
+
+/* .blurb:hover {
     -webkit-transform: scale(1.05);
 	transform: scale(1.05);
     transform-origin: center;
     
-}
+} */
 
 @media screen and (min-width: 992px){
     .blurb {
-        width: 49%;
+        width: 45%;
         height: 70vh;
         margin-bottom: 1vh;
         background-clip: border-box;
     }
 
-    .profile {
-        width: 49%;
-        height: 70vh;
+    .intro-pic {
+        width: 45%;
+        /* height: 70vh; */
         margin-bottom: 1vh;
         background-clip: border-box;
+    }
+
+
+    .about-container {
+        margin-top: 5vh;
     }
 }
 
@@ -75,30 +145,46 @@
     .blurb {
         width: 100%;
         /* height:40vh; */
-        margin-bottom: 1vh;
+        /* margin-bottom: 1vh; */
+        margin-top: 5vh;
         background-clip: border-box;
     }
 
-    .profile {
+    .intro-pic {
         width: 100%;
         /* height: 40vh; */
-        margin-bottom: 1vh;
+        /* margin-bottom: 1vh; */
+        margin-top: 5vh;
         background-clip: border-box;
+    }
+
+    .about-container {
+        margin-top: 5vh;
+        /* flex-wrap: nowrap; */
+        flex-direction: column-reverse;
     }
 }
 
 @media screen and (max-width: 600px){
     .blurb {
         width: 100%;
-        /* height: 50%; */
-        margin-bottom: 1vh;
-        background-clip: content-box;
+        /* height:40vh; */
+        /* margin-bottom: 1vh; */
+        margin-top: 5vh;
+        background-clip: border-box;
     }
 
-    .profile {
+    .intro-pic {
         width: 100%;
-        /* height: 50%; */
-        margin-bottom: 1vh;
-        background-clip: content-box;
+        /* height: 40vh; */
+        /* margin-bottom: 1vh; */
+        margin-top: 5vh;
+        background-clip: border-box;
+    }
+
+    .about-container {
+        margin-top: 5vh;
+        /* flex-wrap: nowrap; */
+        flex-direction: column-reverse;
     }
 }
