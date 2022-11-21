@@ -7,7 +7,6 @@ const Contact = () => {
     <>
       <Navbar />
       <div className='contact-container'>
-        {/* <div className='contact-me'>let's start creating things</div> */}
         <div className='contact-me'>create something with me</div>
         <div className='contact-info'>
           <a href={'https://mail.google.com/mail/u/0/#inbox?compose=CllgCKCFSrrCLgwwtJnhzpBhghbvfPFJWjBwDlWGPPzjTdndLnPsNbdqKMJDbgNbGWfHqLVnpwL'} className='email'>GMAIL</a>

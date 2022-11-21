@@ -6,7 +6,7 @@ import Contact from "./components/Contact/Contact.jsx"
 import Projects from "./components/Projects/Projects.jsx"
 // import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Skills from "./components/Skills/Skills.jsx"
-import Landing from "./components/Landing/Landing.jsx"
+// import Landing from "./components/Landing/Landing.jsx"
 import Home from "./components/Home/Home.jsx"
 import { Route, Routes } from "react-router-dom"
 // import { useState} from 'react'
@@ -19,35 +19,20 @@ import { Route, Routes } from "react-router-dom"
 
     //hitting home on the navbar will return you to the landing page, where you must again click the shoes to enter? or home will just take you to the actual homepage, no way to return to the landing
 
-    //need back button for projects
-
-    //need to fix ugly carousel
 
 function App() {
 
-  // const [enterSite, setEnterSite] = useState('')
-
-  // const showNavBar = () => {
-
-  //   setEnterSite()
-  // }
-
   return (
     <div className='full-background'>
-      {/* <div className='enter-site' onClick={() => showNavBar()}>go</div>
-      <div className='navigation'>
-        <Navbar /> */}
         <div className="container">
           <Routes>
-            <Route path="/home" element={<Home />} />
-            <Route path="/landing" element={<Landing />} /> 
+            <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} /> 
             <Route path="/projects" element={<Projects />} /> 
             <Route path="/skills" element={<Skills />} /> 
             <Route path="/contact" element={<Contact />} /> 
           </Routes>
         </div>
-      {/* </div> */}
     </div>
   );
 }

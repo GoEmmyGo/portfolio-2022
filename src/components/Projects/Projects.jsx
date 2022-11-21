@@ -6,8 +6,7 @@ import "./VitaminSol.jsx"
 import "./StoneBabes.css"
 import "./StoneBabes.jsx"
 import stoneBabesPic from '../Images/stone-babes.png'
-import vitaminSolPic from '../Images/vitamin-sol.png'
-// import { Link } from "react-router-dom"
+import vitaminSolPic from '../Images/vita-home.png'
 import Navbar from '../Navbar/Navbar.jsx'
 import StoneBabes from './StoneBabes.jsx'
 import VitaminSol from './VitaminSol.jsx'
@@ -35,10 +34,14 @@ const Projects = () => {
       {!active
          ? 
           <div className='project-container'>
-              <img className='vitamin-sol' src={vitaminSolPic} onClick={() => handleClick('vitamin-sol')} alt="Vitamin Sol Project"></img>
-              {/* <p>Final Capstone Project</p> */}
-              <img className='stone-babes' src={stoneBabesPic} onClick={() => handleClick('stone-babes')} alt="Stone Babes Project"></img>
-            {/* <p>Foundations Capstone Project</p> */}
+              <figure>
+                <img className='vitamin-sol' src={vitaminSolPic} onClick={() => handleClick('vitamin-sol')} alt="Vitamin Sol Project"></img>
+                <figcaption>React Capstone Project</figcaption>
+              </figure>
+              <figure>
+                <img className='stone-babes' src={stoneBabesPic} onClick={() => handleClick('stone-babes')} alt="Stone Babes Project"></img>
+                <figcaption>Vanilla JS Capstone Project</figcaption>
+              </figure>
           </div> 
          : 
           <div className='active-project'>
@@ -69,10 +72,3 @@ const Projects = () => {
 }
 
 export default Projects
-
-//onClick={handleClick}
-
-//check to see if div working with string
-//block out chunks (header, body, etc)
-//refine pieces, think in boxes
-//reusability is crucial

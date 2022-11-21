@@ -1,6 +1,5 @@
 .skill-icons {
     display: flex;
-    /* padding: 5vh 5vw; */
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -11,25 +10,13 @@
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    margin-top: 5vh;
+    margin-top: 15vh;
     margin-left: 10vw;
     margin-right: 10vw;
     margin-bottom: 10vh;
-    /* margin-bottom: 0; */
     align-content: flex-start;
     align-items:flex-start;
-    /* filter: brightness(50%); */
-    /* overflow-y: visible; */
 }
-
-/* .skill-list {
-    font-family: 'Sarina', cursive;
-    font-family: 'Aboreto', cursive;
-    color: whitesmoke;
-    font-size: 5vh;
-    font-weight: 500;
-    letter-spacing: -.1vw;
-} */
 
 .icon-box {
     display: flex;
@@ -41,13 +28,6 @@
     justify-content: space-evenly;
 }
 
-/* .skill-text {
-    display: flex;
-    margin-top: 0;
-    flex-direction: row;
-    justify-content: flex-start;
-} */
-
 svg {
     display: flex;
     padding: 4%;
@@ -55,17 +35,6 @@ svg {
     background-color: rgba(255, 255, 255, 0.664);
     -webkit-transition: .3s ease-in;
 	transition: .3s ease-in;
-    /* box-sizing: border-box;
-    flex-direction: row;
-    flex-wrap: wrap;
-    height: fit-content;
-    width: 50%;
-    align-items: flex-start;
-    justify-content: space-between;
-    padding: 1.5%;
-    margin: 9%;
-    background-color: rgba(255, 255, 255, 0.5); */
-
 }
 
 svg:hover {
@@ -73,17 +42,6 @@ svg:hover {
 	transform: scale(1.2);
     transform-origin: center;
 }
-
-/* #node {
-    filter: brightness(0%) invert(1);
-    background-color: transparent;
-}
-
-#github {
-    filter:brightness(100%) invert(0);
-    background-color: transparent;
-} */
-
 
 @media screen and (min-width: 992px){
     .skill-icons {

@@ -1,18 +1,40 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './StoneBabes.css'
 import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.css";
-// import { useState } from 'react'
 
 const StoneBabes = () => {
 
+    const [thumbSize, setThumbSize] = useState('')
 
-  // const goBack = (projectPage) => {
+  useEffect(() => {
 
-  //   const [return, setReturn] = useState('')
+    getThumbWidth()
 
-  //   setReturn(projectPage)
-  // }
+    window.addEventListener("resize", getThumbWidth)
+    
+    return () => window.removeEventListener("resize", getThumbWidth)
+
+  }, [])
+
+
+  const getThumbWidth = () => {
+
+    let width = (window.innerWidth * 0.8) / 6.5
+
+    return setThumbSize(width)
+  }
+
+  const renderThumbs = () => {
+    return [
+            <img alt="stone babes homepage" src={require("../Images/stone-home.png")} />,
+            <img alt="stone babes about page" src={require("../Images/stone-about.png")} />,
+            <img alt="stone babes projects" src={require("../Images/stone-projects-resize.png")}/>,
+            <img alt="stone babes sends" src={require("../Images/stone-sends.png")} />,
+            <img alt="stone babes add climb" src={require("../Images/stone-add.png")} />,
+            <img alt='stone babes video' src={require('../Images/stone-babes-vid-thumbnail.png')} />
+    ]
+  }
 
   return (
     <>
@@ -20,50 +42,36 @@ const StoneBabes = () => {
         <Carousel 
           autoPlay
           showStatus={false}
-          // max-width={1894}
-          // thumbWidth={275}
+          thumbWidth={thumbSize}
           infiniteLoop={true}
           useKeyboardArrows={true}
           dynamicHeight={true}
           interval={4000}
+          renderThumbs={renderThumbs}
           >
           <div>
             <img alt="stone babes homepage" src={require("../Images/stone-home.png")} />
-            <p className="stone-home">Legend 1</p>
           </div>
           <div>
             <img alt="stone babes about page" src={require("../Images/stone-about.png")} />
-            <p className="stone-about">Legend 1</p>
           </div>
           <div>
-            <img alt="stone babes projects" src={require("../Images/stone-projects.png")}/>
-            <p className="stone-projects">Legend 1</p>
+            <img alt="stone babes projects" src={require("../Images/stone-projects-resize.png")}/>
           </div>
           <div>
             <img alt="stone babes sends" src={require("../Images/stone-sends.png")} />
-            <p className="stone-sends">Legend 1</p>
           </div>
           <div>
             <img alt="stone babes add climb" src={require("../Images/stone-add.png")} />
-            <p className="stone-add">Legend 1</p>
           </div>
-          <div>
+          <div className='stone-vid-container'>
             <video 
               alt="stone babes video" 
               src={require("../Images/AS GOOD AS IT WILL GET IN TWO MIN.webm")} 
-              controls 
-              max-width={1894}
-            />
-            <img alt='stone babes video' src={require('../Images/stone-babes-vid-thumbnail.png')} />
-            <p className="stone-video">Legend 1</p>
+              controls />
           </div>
         </Carousel>
       </div>
-      {/* <button onClick={()=> setReturn('Projects.jsx')}>
-        {!return ? }
-        Back
-      </button>
-      beeeee */}
     </>
   )
 }

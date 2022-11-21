@@ -1,13 +1,12 @@
-/* @import "react-alice-carousel/lib/alice-carousel.css"; */
-
 .carousel-container {
     margin-left: 10vw;
     margin-right: 10vw; 
-    
+    margin-top: 4vh;
 }
 
+
+
 .vita-home {
-    background: url("../Images/vitamin-sol.png") no-repeat center center;
     margin-left: 10vw;
     margin-right: 10vw;
     -webkit-background-size: cover;
@@ -17,7 +16,6 @@
 }
 
 .vita-about {
-    background: url("../Images/vita-about.png") no-repeat center center;
     margin-left: 10vw;
     margin-right: 10vw;
     -webkit-background-size: cover;
@@ -27,7 +25,6 @@
 }
 
 .vita-calc {
-    background: url("../Images/vita-calc.png") no-repeat center center;
     margin-left: 10vw;
     margin-right: 10vw;
     -webkit-background-size: cover;
@@ -37,7 +34,6 @@
 }
 
 .vita-loading {
-    background: url("../Images/vita-loading.png") no-repeat center center;
     margin-left: 10vw;
     margin-right: 10vw;
     -webkit-background-size: cover;
@@ -47,7 +43,6 @@
 }
 
 .vita-solution {
-    background: url("../Images/vita-solution.png") no-repeat center center;
     margin-left: 10vw;
     margin-right: 10vw;
     -webkit-background-size: cover;
@@ -56,25 +51,13 @@
     background-size: cover;
 } 
 
-/* .carousel .thumbs {
+.vita-vid-container video {
     display: flex;
-    flex-direction: column;
+    height: auto;
+    width: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
-.carousel .thumbs-wrapper {
-    display: flex;
-    position: initial;
-}
-
-.carousel-root {
-    display: flex;
-    flex-direction: row;
-}
-
-.carousel .carousel-slider {
-    overflow: visible !important;
-    width: 200vw !important;
-    display: flex !important;
-} */
- 
- 
