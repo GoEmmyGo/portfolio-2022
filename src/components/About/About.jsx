@@ -9,7 +9,7 @@ const About = () => {
       <div className='about-container'>
         <div className='blurb' alt="about me paragraph">
           <p className='intro'>Hi, I'm Emmaline, its nice to meet you.</p>
-          <p id='bio'>I'm <strong>full stack web developer</strong> with a little bit of a crush on <strong>UI/UX design.</strong>
+          <p id='bio'>I'm <strong>full stack web developer</strong> with a serious crush on <strong>UI/UX design.</strong>
           <br/>
           <br/>
           Originally a scientific researcher, I have always been fascinated by the chaos of biology, but I found myself increasingly disheartened at having to accept so many variables would always be out of my control; I simply could not conduct my experiments in a vaccuum. I wanted to be a part of building things that would give me concrete answers and I stumbled upon a world I had never before considered; <strong>web development.</strong> 
