@@ -5,8 +5,10 @@
     justify-content: space-between;
     box-sizing: border-box;
     margin-top: 20vh;
-    padding-left: 10vw;
-    padding-right: 10vw;
+    /* padding-left: 15vw;
+    padding-right: 15vw; */
+    margin-left: 15vw;
+    margin-right: 15vw;
     background-color: whitesmoke;
     margin-bottom: 10vh;
  
@@ -130,6 +132,8 @@ figcaption {
 
     .project-container {
         margin-top: 20vh;
+        margin-left: 10vw;
+        margin-right: 10vw;
     }
 
     
@@ -148,6 +152,8 @@ figcaption {
     }
     .project-container {
         margin-top: 15vh;
+        margin-left: 5vw;
+        margin-right: 5vw;
     }
 
     .back-button {

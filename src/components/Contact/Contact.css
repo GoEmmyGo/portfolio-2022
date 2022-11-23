@@ -9,9 +9,9 @@
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    margin-left: 10vw;
-    margin-right: 10vw;
-    margin-bottom: 10vh;
+    margin-left: 15vw;
+    margin-right: 15vw;
+    margin-bottom: 15vh;
 }
 
 
@@ -61,4 +61,20 @@
     -webkit-transform: scale(1.1);
 	transform: scale(1.1);
     transform-origin: center;
+}
+
+@media screen and (max-width: 1200px){
+
+    .contact-container {
+        margin-left: 10vw;
+        margin-right: 10vw;
+    }
+}
+
+@media screen and (max-width: 600px){
+
+    .contact-container {
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
 }

@@ -1,6 +1,6 @@
 .carousel-container {
-    margin-left: 10vw;
-    margin-right: 10vw; 
+    margin-left: 15vw;
+    margin-right: 15vw; 
     margin-top: 3vh; 
     height: auto;
     overflow-y: visible;
@@ -113,6 +113,22 @@
     /* margin-top: 5vh; */
     margin-bottom: 5vh;
     padding: 0;
+}
+
+@media screen and (max-width: 1200px){
+
+    .carousel-container {
+        margin-left: 10vw;
+        margin-right: 10vw;
+    }
+}
+
+@media screen and (max-width: 600px){
+
+    .carousel-container {
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
 }
 
  

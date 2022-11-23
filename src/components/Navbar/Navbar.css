@@ -14,8 +14,8 @@
     list-style: none;
     text-decoration: none;
     font-family: 'Antonio', sans-serif;
-    padding-left: 10vw;
-    padding-right: 10vw;
+    padding-left: 15vw;
+    padding-right: 15vw;
     margin-top: 7vh;
     margin-bottom: 5vh;
     font-size: 1.5rem;
@@ -76,6 +76,11 @@
 }
 
 @media screen and (max-width: 1200px){
+
+    .nav ul {
+        padding-left: 10vw;
+        padding-right: 10vw;
+    }
     
     .nav li {
         border: 2px solid transparent;
@@ -100,6 +105,8 @@
 
     .nav ul {
         font-size: 1rem;
+        padding-left: 5vw;
+        padding-right: 5vw;
     }
 
     .nav li {

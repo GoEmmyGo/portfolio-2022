@@ -1,6 +1,6 @@
 .carousel-container {
-    margin-left: 10vw;
-    margin-right: 10vw; 
+    margin-left: 15vw;
+    margin-right: 15vw; 
     margin-top: 4vh;
 }
 
@@ -61,3 +61,18 @@
     background-size: cover;
 }
 
+@media screen and (max-width: 1200px){
+
+    .contact-container {
+        margin-left: 10vw;
+        margin-right: 10vw;
+    }
+}
+
+@media screen and (max-width: 600px){
+
+    .contact-container {
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
+}

@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <>
         <Navbar />
-        <div className='home-box'>
+        <div className='home-container'>
             <div className="main-title">
                 Emmaline Rose       
             </div>
