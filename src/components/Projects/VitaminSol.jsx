@@ -20,7 +20,7 @@ const VitaminSol = () => {
 
   const getThumbWidth = () => {
 
-    let width = (window.innerWidth * 0.8) / 6.5
+    let width = (window.innerWidth * 0.7) / 6.5
 
     return setThumbSize(width)
   }
