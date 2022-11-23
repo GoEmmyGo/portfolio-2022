@@ -9,11 +9,11 @@ const Contact = () => {
       <div className='contact-container'>
         <div className='contact-me'>create something with me</div>
         <div className='contact-info'>
-          <a href={'https://mail.google.com/mail/u/0/#inbox?compose=CllgCKCFSrrCLgwwtJnhzpBhghbvfPFJWjBwDlWGPPzjTdndLnPsNbdqKMJDbgNbGWfHqLVnpwL'} className='email'>GMAIL</a>
+          <a href={'https://mail.google.com/mail/u/0/#inbox?compose=CllgCKCFSrrCLgwwtJnhzpBhghbvfPFJWjBwDlWGPPzjTdndLnPsNbdqKMJDbgNbGWfHqLVnpwL'} target="_blank" rel="noopener noreferrer" className='email'>GMAIL</a>
           <br/>
-          <a href={'https://www.linkedin.com/in/emmaline-rose/'}className='linked-in'>LINKED IN</a>
+          <a href={'https://www.linkedin.com/in/emmaline-rose/'} target="_blank" rel="noopener noreferrer"className='linked-in'>LINKED IN</a>
           <br/>
-          <a href={'https://github.com/GoEmmyGo'}className='github'>GITHUB</a>
+          <a href={'https://github.com/GoEmmyGo'} target="_blank" rel="noopener noreferrer" className='github'>GITHUB</a>
         </div>
       </div>
     </>
