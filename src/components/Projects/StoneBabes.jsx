@@ -43,7 +43,7 @@ const StoneBabes = () => {
           autoPlay
           showStatus={false}
           thumbWidth={thumbSize}
-          infiniteLoop={true}
+          infiniteLoop={false}
           useKeyboardArrows={true}
           dynamicHeight={true}
           interval={4000}
